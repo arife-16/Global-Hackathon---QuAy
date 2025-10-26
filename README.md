@@ -1,5 +1,7 @@
 # Global Hackathon — QuAy
 
+VİDEO:https://youtu.be/JkFbyPSVQyU
+
 Quantum‑Enhanced Stock Price Prediction with hybrid Variational Quantum Circuits (VQC) and classical deep learning. This repo combines practical feature engineering with a quantum layer to learn return dynamics, plus notebooks exploring Quantum‑Enhanced CNN/LSTM models and QGAF search.
 
 ## Core Aspects
@@ -54,3 +56,4 @@ Outputs:
 
 ## License
 Released under the MIT License — see `LICENSE`.
+
