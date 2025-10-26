@@ -31,7 +31,7 @@ If TensorFlow install issues arise, consider a version pin compatible with your 
 
 ## Data Inputs
 Place `X_train.csv` and `X_test.csv` in the repo root.
-- Training (`X_train.csv`) must include: `Open`, `High`, `Low`, `Close`, `Volume` (optional `Date`).
+- Training (`X_train.csv`) must include: `Open`, `High`, `Low`, `Close`, `Volume`,`Date`.
 - Test (`X_test.csv`) must include: `Date`, `Open`, `High`, `Low`, `Volume` (the script estimates `Close`).
 
 ## Run the VQC Model
@@ -56,4 +56,5 @@ Outputs:
 
 ## License
 Released under the MIT License — see `LICENSE`.
+
 
