@@ -1,6 +1,8 @@
 # Global Hackathon — QuAy
 
-VİDEO:https://youtu.be/JkFbyPSVQyU
+**🏆 1st Place Winner - Best MSE & R² Scores**
+
+VİDEO: https://youtu.be/JkFbyPSVQyU
 
 Quantum‑Enhanced Stock Price Prediction with hybrid Variational Quantum Circuits (VQC) and classical deep learning. This repo combines practical feature engineering with a quantum layer to learn return dynamics, plus notebooks exploring Quantum‑Enhanced CNN/LSTM models and QGAF search.
 
@@ -18,25 +20,27 @@ Quantum‑Enhanced Stock Price Prediction with hybrid Variational Quantum Circui
 - `prediction_model_descirption.md` — design notes.
 - `Overall_model_metric_comparison.png` — comparison summary.
 - `prediction_violations.png` — produced by the VQC script.
+- `vqc_final.keras` — trained VQC model (generated after running script).
+- `predictions_vqc.csv` — VQC predictions (generated after running script).
 
 ## Requirements
 - Python 3.9+ recommended.
 - Packages: `pandas`, `numpy`, `pennylane`, `scikit-learn`, `tensorflow`, `matplotlib`.
 
 Install quickly:
-```
+```bash
 pip install pandas numpy pennylane scikit-learn tensorflow matplotlib
 ```
 If TensorFlow install issues arise, consider a version pin compatible with your Python.
 
 ## Data Inputs
 Place `X_train.csv` and `X_test.csv` in the repo root.
-- Training (`X_train.csv`) must include: `Open`, `High`, `Low`, `Close`, `Volume`,`Date`.
+- Training (`X_train.csv`) must include: `Open`, `High`, `Low`, `Close`, `Volume`, `Date`.
 - Test (`X_test.csv`) must include: `Date`, `Open`, `High`, `Low`, `Volume` (the script estimates `Close`).
 
 ## Run the VQC Model
 From the repo folder:
-```
+```bash
 python generate_vqc_prediction.py
 ```
 Outputs:
@@ -56,5 +60,3 @@ Outputs:
 
 ## License
 Released under the MIT License — see `LICENSE`.
-
-
